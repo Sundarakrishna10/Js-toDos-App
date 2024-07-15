@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(89, 95, 95);
+    
+}
+.mainContainer{
+    min-width:500px;
+    background-color: rgb(132, 147, 147);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    min-height: 500px;
+   
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    color: rgb(76, 34, 88);
+    margin-bottom: 20px;
+}
+#input{
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+#input:focus{
+    outline: 0;
+}
+#addbtn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    color: beige;
+    border: none;
+    cursor: pointer;
+    width:50px;
+    margin-right: 2px;
+}
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+#todolist li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 500;
+}
+#todolist li button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color:red;
+    color: beige;
+    border: none;
+    cursor: pointer;
+    width:50px;
+    margin-right: 2px;
+    padding-right: 5px;
+    
+}
+/**********************************************************/
+
+
+#todolist li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#todolist li button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    border-color: green;
+}
+
+input[type="radio"]:checked::after {
+    content: "\2713"; /* Unicode for check mark */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: green;
+}
+
